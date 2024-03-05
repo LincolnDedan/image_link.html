@@ -1,0 +1,90 @@
+<! DOCTYPE html>
+<html>
+    <head>
+        <title>forms in html</title>
+    </head>
+    <body bgcolor="pink">
+       <h1>Sign Up Form</h1>
+<form action="connect.php" method="post" enctypye="multipart/form-data">
+    <fieldset>
+        <legend>Student Details</legend>
+        <label for="first name">First Name:</label>
+        <input type="text" id="first name" name="first name" placeholder="" required>
+        <br>
+        <label for="second name">Second Name:</label>
+        <input type="text" id="second name" name="second name" placeholder="" required>
+        <br>
+        <label for="admission">Adm No:</label>
+        <input type="admisiion" id="admission" name="admission" placeholder="input your admission number">
+        <br>
+        <label for="faculty">Faculty:</label>
+        <input type="faculty" id="faculty" name="faculty" required>
+        <br>
+        <label for="course">Course:</label>
+        <input type="course" id="course" name="course" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="qwert56@gmail.com" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" minlength="8" maxlength="16" id="password" name="password" required>
+    </fieldset>
+        <br>
+
+    <fieldset>
+        <legend>subject enrolled</legend>
+        <input type="checkbox" id="subjects" name="math" value="math">
+        <label for="math">Math</label>
+        <br>
+        <input type="checkbox" id="subjects" name="geography" value="geography">
+        <label for="geography">Geography</label>
+        <br>
+        <input type="checkbox" id="subjects" name="chemistry" value="chemistry">
+        <label for="geography">Chemistry</label>
+        <br>
+        <input type="checkbox" id="subjects" name="Kiswahili" value="kiswahili">
+        <label for="geography">Kiswahili</label>
+        <br>
+        <input type="checkbox" id="subjects" name="english" value="english">
+        <label for="geography">English</label>
+    </fieldset>
+        <br>
+    <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label>Male</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label>Female</label>
+    </fieldset>
+        <br>
+    <fieldset>
+        <legend>Mode of studies</legend>
+        <label for="lesson">location:</label>
+        <select id="Lesson" name="" multiple>
+        <option value=""></option>
+        <option value="">Online</option>
+        <option value="">Physical</option>
+        </select>
+    </fieldset>
+        <br>
+        <label for="passport">Passport photo</label>
+        <input type="file" id="passport" name="passport" accept="png/*">
+        <br>
+        <hr>
+        <input type="hidden"  id="token" name="token" value="qwerty">
+        <input type="button" id="ok" name="ok" value="OK">
+        <br>
+
+        <input type="reset" id="reset" name="reset" value="Reset">
+        <input type="submit" id="submit" name="submit" value="Submit">
+        <br>
+        <br>
+       
+        <textarea id="comment" rows="3" cols="20">
+        </textarea>
+        <label for="comment">Comment</label>
+
+</form>
+    </body>
+</html>
